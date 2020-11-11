@@ -1,0 +1,5 @@
+input()
+d=list(input().split())
+s=list(input().split())
+m=s.index(d[0])
+print(['bad puzzle','good puzzle'][d in [s[m:]+s[:m],s[m::-1]+s[:m:-1]]])
