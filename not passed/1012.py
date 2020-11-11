@@ -7,4 +7,3 @@ for i in range(n):
         t=[]
         t.appent(l.pop(0))
         for a in l:
-            if
