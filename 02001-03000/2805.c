@@ -2,10 +2,10 @@
 
 int main()
 {
-	int i, n, m, arr[1000000], l, r, mid, sum, temp;
-	scanf("%d%d", &n, &m);
+	long long i, n, m, arr[1000000], l, r, mid, sum, temp;
+	scanf("%lld%lld", &n, &m);
 	for (i = 0; i < n; i++)
-		scanf("%d", arr + i);
+		scanf("%lld", arr + i);
 	l = 0;
 	r = 2000000000;
 	while(l <= r)
@@ -19,7 +19,7 @@ int main()
 		}
 		if (sum == m)
 		{
-			printf("%d\n", mid);
+			printf("%lld\n", mid);
 			return 0;
 		}
 		if (sum > m)
@@ -30,6 +30,6 @@ int main()
 		else
 			r = mid -1;
 	}
-	printf("%d\n", temp);
+	printf("%lld\n", temp);
 	return 0;
 }	
