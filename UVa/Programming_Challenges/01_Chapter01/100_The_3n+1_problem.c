@@ -1,4 +1,7 @@
+//https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=29&page=show_problem&problem=36
+
 #include <stdio.h>
+
 int main()
 {
 	long long lbound, ubound, cnt, max, i, temp;
