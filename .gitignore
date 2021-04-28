@@ -1,2 +1,4 @@
 a.out
 ing
+*.ipynb
+.ipynb_checkpoints
