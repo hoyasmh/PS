@@ -1,12 +1,10 @@
+import heapq
 import sys
-n=int(input())
-h=[]
+l = []
+n = int(sys.stdin.readline())
 for i in range(n):
-    c=int(sys.stdin.readline())
-    if c==0:
-        if len(h)==0:
-            print(0)
-        else:
-            print(h.pop(h.index(min(h))))
+    cmd = int(sys.stdin.readline())
+    if cmd == 0:
+        print(0 if len(l) == 0 else heapq.heappop(l))
     else:
-        h.append(c)
+        heapq.heappush(l, cmd)
